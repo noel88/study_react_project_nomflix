@@ -2,10 +2,16 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
+import Loader from "../../Components/loader";
 
 //4
 const TVPresenter = ({ topRated, popular, airingToday, loading, error }) =>
-    <h1>test</h1>;
+    loading ? (
+        <Loader/>
+    ) : (
+        <h1>test</h1>
+    );
+
 
 
 //2
