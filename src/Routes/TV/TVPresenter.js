@@ -3,16 +3,52 @@ import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import Loader from "../../Components/loader";
+import Section from "../../Components/Section";
 
 //4
 const TVPresenter = ({ topRated, popular, airingToday, loading, error }) =>
     loading ? (
         <Loader/>
     ) : (
-        <h1>test</h1>
+        <div>
+            {topRated && topRated.length > 0 && (
+                <Section title="TV Top Rated">
+                    {
+                        topRated.map(tv =>
+                            <span key={tv.id}>{tv.name}</span>
+                        )
+                    }
+                </Section>
+            )}
+            {popular && popular.length > 0 && (
+                <Section title="TV popular">
+                    {
+                        popular.map(tv =>
+                            <span key={tv.id}>{tv.name}</span>
+                        )
+                    }
+                </Section>
+            )}
+            {airingToday && airingToday.length > 0 && (
+                <Section title="TV airingToday">
+                    {
+                        airingToday.map(tv =>
+                            <span key={tv.id}>{tv.name}</span>
+                        )
+                    }
+                </Section>
+            )}
+        </div>
     );
 
-
+// {nowPlaying && nowPlaying.length > 0 && (
+//     <Section title="Now Playing">
+//         {nowPlaying.map(movie =>
+//             <span key={movie.id}>{movie.title}</span>
+//         )}
+//     </Section>
+//
+// )}
 
 //2
 TVPresenter.propTypes = {
