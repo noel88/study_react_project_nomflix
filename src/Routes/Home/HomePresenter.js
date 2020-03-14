@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import styled from "styled-components";
 import Loader from "../../Components/loader";
 import Section from "../../Components/Section";
+import Poster from "../../Components/Poster";
 
 const Container = styled.div`
   padding: 0px 10px;
@@ -19,28 +20,41 @@ const HomePresenter = ({ nowPlaying, popular, upcoming, loading, error }) =>
                 {nowPlaying && nowPlaying.length > 0 && (
                     <Section title="Now Playing">
                         {nowPlaying.map(movie =>
-                             <span key={movie.id}>{movie.title}</span>
-                         )}
+                             <Poster
+                                id={movie.id}
+                                imageURL={movie.poster_path}
+                                title={movie.title}
+                                rating={movie.vote_average}
+                                year={movie.release_date.substring(0,4)}
+                             />
+                        )}
                     </Section>
 
                 )}
                 {popular && popular.length > 0 && (
                     <Section title="Movie Popular">
-                        {
-                            popular.map(popular =>
-                                <span key={popular.id}>{popular.title}</span>
-                            )
-                        }
+                        {popular.map(movie =>
+                            <Poster
+                                id={movie.id}
+                                imageURL={movie.poster_path}
+                                title={movie.title}
+                                rating={movie.vote_average}
+                                year={movie.release_date.substring(0,4)}
+                            />
+                        )}
                     </Section>
-
                 )}
                 {upcoming && upcoming.length > 0 && (
                     <Section title="Movie Upcoming">
-                        {
-                            upcoming.map(movie =>
-                                <span key={movie.id}>{movie.title}</span>
-                            )
-                        }
+                        {upcoming.map(movie =>
+                            <Poster
+                                id={movie.id}
+                                imageURL={movie.poster_path}
+                                title={movie.title}
+                                rating={movie.vote_average}
+                                year={movie.release_date.substring(0,4)}
+                            />
+                        )}
                     </Section>
 
                 )}
