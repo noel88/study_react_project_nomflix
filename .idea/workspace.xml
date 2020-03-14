@@ -3,8 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="bf95c8fc-eb95-4228-976f-3ef21c64dc33" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Routes/Home/HomeContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Routes/Home/HomeContainer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Routes/Home/HomePresenter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Routes/Home/HomePresenter.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Routes/TV/TVContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Routes/TV/TVContainer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Routes/TV/TVPresenter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Routes/TV/TVPresenter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +94,7 @@
       <workItem from="1583131814698" duration="13000" />
       <workItem from="1583311128938" duration="29000" />
       <workItem from="1584076103907" duration="792000" />
-      <workItem from="1584147186321" duration="3071000" />
+      <workItem from="1584147186321" duration="4625000" />
     </task>
     <servers />
   </component>

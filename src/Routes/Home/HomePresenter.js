@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import styled from "styled-components";
 
 const HomePresenter = ({ nowPlaying, popular, upcoming, loading, error }) =>
-    <h1>{nowPlaying}</h1>;
+    <div><h1>test</h1></div>;
 
 HomePresenter.propTypes = {
     nowPlaying: PropTypes.array,
