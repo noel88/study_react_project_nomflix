@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 import styled from "styled-components";
 import Loader from "../../Components/loader";
 import Section from "../../Components/Section";
+import Poster from "../../Components/Poster";
 
 //4
 const TVPresenter = ({ topRated, popular, airingToday, loading, error }) =>
@@ -15,7 +16,13 @@ const TVPresenter = ({ topRated, popular, airingToday, loading, error }) =>
                 <Section title="TV Top Rated">
                     {
                         topRated.map(tv =>
-                            <span key={tv.id}>{tv.name}</span>
+                            <Poster
+                                id={tv.id}
+                                imageURL={tv.poster_path}
+                                title={tv.name}
+                                rating={tv.vote_average}
+                                year={tv.first_air_date.substring(0,4)}
+                            />
                         )
                     }
                 </Section>
@@ -24,7 +31,13 @@ const TVPresenter = ({ topRated, popular, airingToday, loading, error }) =>
                 <Section title="TV popular">
                     {
                         popular.map(tv =>
-                            <span key={tv.id}>{tv.name}</span>
+                            <Poster
+                                id={tv.id}
+                                imageURL={tv.poster_path}
+                                title={tv.name}
+                                rating={tv.vote_average}
+                                year={tv.first_air_date.substring(0,4)}
+                            />
                         )
                     }
                 </Section>
@@ -33,7 +46,13 @@ const TVPresenter = ({ topRated, popular, airingToday, loading, error }) =>
                 <Section title="TV airingToday">
                     {
                         airingToday.map(tv =>
-                            <span key={tv.id}>{tv.name}</span>
+                            <Poster
+                                id={tv.id}
+                                imageURL={tv.poster_path}
+                                title={tv.name}
+                                rating={tv.vote_average}
+                                year={tv.first_air_date.substring(0,4)}
+                            />
                         )
                     }
                 </Section>

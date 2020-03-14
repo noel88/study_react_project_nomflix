@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bf95c8fc-eb95-4228-976f-3ef21c64dc33" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/image/empty-image.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Poster.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Poster.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Section.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Section.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Routes/TV/TVPresenter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Routes/TV/TVPresenter.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -34,7 +38,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/image" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -43,16 +47,17 @@
     <property name="nodejs_package_manager_path" value="yarn" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\react\nomflix\src\Components" />
-      <recent name="E:\react\nomflix\src\Components\Header" />
-      <recent name="E:\react\nomflix\src\Component" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/image" />
       <recent name="E:\react\nomflix\src\Routes\TV" />
       <recent name="E:\react\nomflix\src\Routes\Search" />
       <recent name="E:\react\nomflix\src\Routes\Home" />
       <recent name="E:\react\nomflix\src\Routes" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\react\nomflix\src\Components" />
+      <recent name="E:\react\nomflix\src\Components\Header" />
+      <recent name="E:\react\nomflix\src\Component" />
     </key>
   </component>
   <component name="RunManager" selected="npm.npm start">
@@ -88,7 +93,7 @@
       <workItem from="1583131814698" duration="13000" />
       <workItem from="1583311128938" duration="29000" />
       <workItem from="1584076103907" duration="792000" />
-      <workItem from="1584147186321" duration="6916000" />
+      <workItem from="1584147186321" duration="8766000" />
     </task>
     <servers />
   </component>
