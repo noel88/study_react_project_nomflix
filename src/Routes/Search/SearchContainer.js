@@ -1,11 +1,33 @@
 import React, {Component} from 'react';
+import SearchPresenter from "./SearchPresenter";
+
 
 class SearchContainer extends Component {
+    state = {
+        movieResults: null,
+        tvResults: null,
+        searchTerm: null,
+        loading: false,
+        error: null
+    };
+
     render() {
+        const {
+            movieResults,
+            tvResults,
+            searchTerm,
+            loading,
+            error
+        } = this.state;
+
         return (
-            <div>
-                <text>Search</text>
-            </div>
+           <SearchPresenter
+                movieResults={movieResults}
+                tvResults={tvResults}
+                searchTerm={searchTerm}
+                loading={loading}
+                error={error}
+           />
         );
     }
 }
