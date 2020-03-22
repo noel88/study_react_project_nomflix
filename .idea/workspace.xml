@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bf95c8fc-eb95-4228-976f-3ef21c64dc33" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/image/empty-image.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Poster.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Poster.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Section.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Section.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Routes/TV/TVPresenter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Routes/TV/TVPresenter.js" afterDir="false" />
     </list>
@@ -93,7 +90,9 @@
       <workItem from="1583131814698" duration="13000" />
       <workItem from="1583311128938" duration="29000" />
       <workItem from="1584076103907" duration="792000" />
-      <workItem from="1584147186321" duration="8766000" />
+      <workItem from="1584147186321" duration="9025000" />
+      <workItem from="1584361465321" duration="185000" />
+      <workItem from="1584833510273" duration="868000" />
     </task>
     <servers />
   </component>
@@ -112,5 +111,11 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="496" y="136" width="687" height="777" key="find.popup" timestamp="1584835416813">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="496" y="136" width="687" height="777" key="find.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1584835416813" />
   </component>
 </project>

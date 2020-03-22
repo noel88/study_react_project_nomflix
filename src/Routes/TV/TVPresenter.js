@@ -6,12 +6,18 @@ import Loader from "../../Components/loader";
 import Section from "../../Components/Section";
 import Poster from "../../Components/Poster";
 
+const Container = styled.div`
+  padding: 0 10px
+`;
+
+
+
 //4
 const TVPresenter = ({ topRated, popular, airingToday, loading, error }) =>
     loading ? (
         <Loader/>
     ) : (
-        <div>
+        <Container>
             {topRated && topRated.length > 0 && (
                 <Section title="TV Top Rated">
                     {
@@ -57,7 +63,7 @@ const TVPresenter = ({ topRated, popular, airingToday, loading, error }) =>
                     }
                 </Section>
             )}
-        </div>
+        </Container>
     );
 
 // {nowPlaying && nowPlaying.length > 0 && (
