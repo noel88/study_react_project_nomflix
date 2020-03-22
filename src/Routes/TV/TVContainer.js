@@ -27,7 +27,7 @@ class TvContainer extends Component {
             } = await tvApi.topRated();
             this.setState({airingToday, popular, topRated})
         } catch (error) {
-            this.setState({error})
+            this.setState({error : "Can't find TV information"})
         } finally {
             this.setState({loading: false})
         }

@@ -4,6 +4,7 @@ import styled from "styled-components";
 import Loader from "../../Components/loader";
 import Section from "../../Components/Section";
 import Poster from "../../Components/Poster";
+import Message from "../../Components/Message";
 
 
 const Container = styled.div`
@@ -63,6 +64,7 @@ class SearchPresenter extends Component{
                                         </Section>
                                     )
                                 }
+
                                 {
                                     tvResults && tvResults.length > 0 && (
                                         <Section title="TV Results">
@@ -79,7 +81,16 @@ class SearchPresenter extends Component{
                                     )
                                 }
                             </>
-                        )
+                        )}
+                {error && <Message color="#e74c3c" text={error}/>}
+                {
+                    tvResults &&
+                    movieResults &&
+                    tvResults.length === 0 &&
+                    movieResults.length === 0 &&
+                    <Message color="#95a5a6" text="Nothing found"/>
+
+
                 }
             </Container>
         );
