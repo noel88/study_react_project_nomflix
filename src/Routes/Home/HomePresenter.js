@@ -5,6 +5,7 @@ import Loader from "../../Components/loader";
 import Section from "../../Components/Section";
 import Poster from "../../Components/Poster";
 import Message from "../../Components/Message";
+import Helmet from "react-helmet";
 
 const Container = styled.div`
   padding: 0px 10px;
@@ -13,59 +14,67 @@ const Container = styled.div`
 
 
 
-const HomePresenter = ({ nowPlaying, popular, upcoming, loading, error }) =>
-    loading ? (
-            <Loader />
-        ) : (
-            <Container>
-                {nowPlaying && nowPlaying.length > 0 && (
-                    <Section title="Now Playing">
-                        {nowPlaying.map(movie =>
-                             <Poster
-                                id={movie.id}
-                                imageURL={movie.poster_path}
-                                title={movie.title}
-                                rating={movie.vote_average}
-                                year={movie.release_date.substring(0,4)}
-                                isMovie={true}
-                             />
-                        )}
-                    </Section>
+const HomePresenter = ({ nowPlaying, popular, upcoming, loading, error }) => (
+    <>
+        <Helmet>
+            <title>Movie | Netflix_clone</title>
+        </Helmet>
 
-                )}
-                {popular && popular.length > 0 && (
-                    <Section title="Movie Popular">
-                        {popular.map(movie =>
-                            <Poster
-                                id={movie.id}
-                                imageURL={movie.poster_path}
-                                title={movie.title}
-                                rating={movie.vote_average}
-                                year={movie.release_date.substring(0,4)}
-                                isMovie={true}
-                            />
-                        )}
-                    </Section>
-                )}
-                {upcoming && upcoming.length > 0 && (
-                    <Section title="Movie Upcoming">
-                        {upcoming.map(movie =>
-                            <Poster
-                                id={movie.id}
-                                imageURL={movie.poster_path}
-                                title={movie.title}
-                                rating={movie.vote_average}
-                                year={movie.release_date.substring(0,4)}
-                                isMovie={true}
-                            />
-                        )}
-                    </Section>
+        {
+            loading ? (
+                <Loader/>
+            ) : (
+                <Container>
+                    {nowPlaying && nowPlaying.length > 0 && (
+                        <Section title="Now Playing">
+                            {nowPlaying.map(movie =>
+                                <Poster
+                                    id={movie.id}
+                                    imageURL={movie.poster_path}
+                                    title={movie.title}
+                                    rating={movie.vote_average}
+                                    year={movie.release_date.substring(0, 4)}
+                                    isMovie={true}
+                                />
+                            )}
+                        </Section>
 
-                )}
-                {error && <Message color="#e74c3c" text={error}/>}
-            </Container>
-        );
+                    )}
+                    {popular && popular.length > 0 && (
+                        <Section title="Movie Popular">
+                            {popular.map(movie =>
+                                <Poster
+                                    id={movie.id}
+                                    imageURL={movie.poster_path}
+                                    title={movie.title}
+                                    rating={movie.vote_average}
+                                    year={movie.release_date.substring(0, 4)}
+                                    isMovie={true}
+                                />
+                            )}
+                        </Section>
+                    )}
+                    {upcoming && upcoming.length > 0 && (
+                        <Section title="Movie Upcoming">
+                            {upcoming.map(movie =>
+                                <Poster
+                                    id={movie.id}
+                                    imageURL={movie.poster_path}
+                                    title={movie.title}
+                                    rating={movie.vote_average}
+                                    year={movie.release_date.substring(0, 4)}
+                                    isMovie={true}
+                                />
+                            )}
+                        </Section>
 
+                    )}
+                    {error && <Message color="#e74c3c" text={error}/>}
+                </Container>
+            )
+        }
+    </>
+);
 
 HomePresenter.propTypes = {
     nowPlaying: PropTypes.array,

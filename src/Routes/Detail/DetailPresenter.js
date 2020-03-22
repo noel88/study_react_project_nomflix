@@ -26,7 +26,7 @@ const Backdrop = styled.div`
 `;
 
 const Content = styled.div`
-  display: flex;s
+  display: flex;
   width: 100%;
   position:relative;
   z-index: 1;
@@ -54,7 +54,7 @@ const ItemContainer = styled.div`
   margin: 20px 0;
 `;
 const Divider = styled.span`
-  margin: 0 10px;
+  margin: 0 20px;
 `;
 
 
